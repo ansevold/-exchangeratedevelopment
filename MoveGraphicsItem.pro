@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-09-24T21:16:31
+# Project created by QtCreator 2015-10-07T09:49:16
 #
 #-------------------------------------------------
 
@@ -8,15 +8,15 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = untitled4
+TARGET = MoveGraphicsItem
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
+        widget.cpp \
     moveitem.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += widget.h \
     moveitem.h
 
-FORMS    += mainwindow.ui
+FORMS    += widget.ui

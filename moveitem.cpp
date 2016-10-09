@@ -19,8 +19,9 @@ QRectF MoveItem::boundingRect() const
 void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     painter->setPen(Qt::black);
-    painter->setBrush(Qt::green);
+    painter->setBrush(Qt::white);
     painter->drawRect(-30,-30,60,60);
+    painter->drawText(0, 0, "text");
     Q_UNUSED(option);
     Q_UNUSED(widget);
 }
@@ -37,10 +38,15 @@ void MoveItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 
 void MoveItem::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
-    /* При нажатии мышью на графический элемент
+    /* При нажатии левой кнопки мыши на графический элемент
      * заменяем курсор на руку, которая держит этот элемента
+     * При нажатии правой кнопки мыши удаляет выбраный объект
      * */
-    this->setCursor(QCursor(Qt::ClosedHandCursor));
+    if(event->button() == Qt::RightButton){
+        this->deleteLater();
+    }else{
+        this->setCursor(QCursor(Qt::ClosedHandCursor));
+    }
     Q_UNUSED(event);
 }
 

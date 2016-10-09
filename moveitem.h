@@ -1,5 +1,6 @@
 #ifndef MOVEITEM_H
 #define MOVEITEM_H
+
 #include <QObject>
 #include <QGraphicsItem>
 #include <QPainter>
@@ -25,4 +26,5 @@ private:
 
 public slots:
 };
+
 #endif // MOVEITEM_H
