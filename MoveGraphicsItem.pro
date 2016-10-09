@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         widget.cpp \
-    moveitem.cpp
+    moveitem.cpp \
+    items.cpp
 
 HEADERS  += widget.h \
-    moveitem.h
+    moveitem.h \
+    items.h
 
 FORMS    += widget.ui
