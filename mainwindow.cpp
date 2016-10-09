@@ -41,4 +41,5 @@ void MainWindow::on_pushButton_clicked()
     item->setPos(randomBetween(30, 470),    // Устанавлвиваем случайную позицию элемента
                  randomBetween(30,470));
     scene->addItem(item);   // Добавляем элемент на графическую сцену
+    //здарова
 }
