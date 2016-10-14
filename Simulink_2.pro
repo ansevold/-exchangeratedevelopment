@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-10-07T09:49:16
+# Project created by QtCreator 2016-10-14T18:21:11
 #
 #-------------------------------------------------
 
@@ -8,17 +8,17 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = MoveGraphicsItem
+TARGET = Simulink_2
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp \
-    moveitem.cpp \
-    items.cpp
+        mainwindow.cpp \
+    scene.cpp \
+    item.cpp \
+    itemlist.cpp
 
-HEADERS  += widget.h \
-    moveitem.h \
-    items.h
-
-FORMS    += widget.ui
+HEADERS  += mainwindow.h \
+    scene.h \
+    item.h \
+    itemlist.h
